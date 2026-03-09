@@ -2,26 +2,26 @@
 class Fortunnels < Formula
   desc "ForTunnels CLI client for secure tunneling"
   homepage "https://fortunnels.ru"
-  version "3"
+  version "4"
 
   if OS.mac? && Hardware::CPU.intel?
     url "https://fortunnels.ru/landing-assets/downloads/fortunnels-macos+amd64.tar.gz"
-    sha256 "6007c20c49d8a25dc1b0c0e5d22fbed5646e37544de0aca3f0057f632dd6fa30"
+    sha256 "d7010d75900b7fc287180c65b0793233b1c65fce248591e334fa710cf80a267d"
   end
 
   if OS.mac? && Hardware::CPU.arm?
     url "https://fortunnels.ru/landing-assets/downloads/fortunnels-macos+arm64.tar.gz"
-    sha256 "c7361cefef2c7136ca4c8eb0999a4de60f2aca95d99ff23f89708210a1a61092"
+    sha256 "5897edb89d6b26e4cb89bfcea59ce47c8b4950b765f6080b5f93e28ad59723da"
   end
 
   if OS.linux? && Hardware::CPU.intel?
     url "https://fortunnels.ru/landing-assets/downloads/fortunnels-linux+amd64.tar.gz"
-    sha256 "9e76366506bde943ebc84ef997c312c78a8c19f4c1ed98d97d86b894e8f086c4"
+    sha256 "95ef72cf008602dfcf3c06eff8a79f7af1a5a3a3264ee3e9b4840f0cc9fb5be0"
   end
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
     url "https://fortunnels.ru/landing-assets/downloads/fortunnels-linux+arm64.tar.gz"
-    sha256 "235e24747fc8452bb6f0840a5eae93ba1e37d2df6f2e04ce47944fec2b55e4ba"
+    sha256 "127779c9ad4e4498cb02122caff71e7139b5a2d14b5f3eb6ccea0031f2fe89dc"
   end
 
   def install
